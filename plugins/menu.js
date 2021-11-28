@@ -118,7 +118,7 @@ let handler  = async (m, { conn, usedPrefix: _p, DevMode }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).join`|`})`, 'g'), (_, name) => replace[name])
     //conn.reply(m.chat, text.trim(), m)
-    await conn.send2Button(m.chat, text.trim(), 'PEMILIK BOT BY ❤️ BENNIISMAEL', 'OWNER', '#owner', 'DONASI', '#donasi', m)
+    await conn.send2Button(m.chat, text.trim(), 'Created By ❤️ Ismail Kurama', 'OWNER', '#owner', 'DONASI', '#donasi', m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
@@ -126,7 +126,7 @@ let handler  = async (m, { conn, usedPrefix: _p, DevMode }) => {
 }
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
-handler.command = /^(menu|help|\?)$/i
+handler.command = /^(pee|pe|\#)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
