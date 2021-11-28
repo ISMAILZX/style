@@ -31,6 +31,7 @@ handler.owner = false
 handler.mods = false
 handler.group = false
 handler.private = false
+handler.premium = true
 
 handler.admin = false
 handler.botAdmin = false
