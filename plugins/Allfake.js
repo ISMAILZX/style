@@ -194,7 +194,7 @@ const fvn = {
 
 }
 handler.command = /^(tesfake)$/i
-handle
+
 
 module.exports = handler
 
